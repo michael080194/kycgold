@@ -1,0 +1,45 @@
+<!-- Initial Page, "data-name" contains page name -->
+<div data-page="checkout" class="page">
+    <div class="navbar">
+        <div class="navbar-inner">
+            <div class="left">
+                <a class="link back icon-only" href="#">
+                    <i class="f7-icons">
+                        arrow_left
+                    </i>
+                </a>
+            </div>
+            <div class="title">Checkout</div>
+            <!-- <div class="right"></div> -->
+        </div>
+    </div>
+
+    <div class="page-content">
+        <!-- List View -->
+        <div class="block-title">
+            訂單送出前確認 ( 右滑以取消項目 )
+        </div>
+
+        <div class="list list-checkout">
+            <ul></ul>
+        </div>
+
+        <div class="block block-strong row">
+            <div class="col total-price-sured">
+                合計 $ <span>0</span> 元
+            </div>
+
+        </div>
+        <div class="block">
+            <div class="row">
+              <button class="button col button-fill button-round signature">簽收</button>
+              <button class="button col button-fill" style="display:none">Button</button>
+              <button class="button col button-fill button-round printBill">印表</button>
+            </div>
+        </div>   
+        <canvas id="myCanvas" style="display:none">
+        </canvas>    
+        <p> <img data-src="" width="110" height="38" class="lazy lazy-fade-in demo-lazy" id="singnatureImg2"/>
+        </p>       
+    </div>
+</div>

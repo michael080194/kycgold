@@ -1,0 +1,30 @@
+<div class="page" data-name="sale_bill">
+  <div class="navbar">
+    <div class="navbar-inner sliding">
+      <div class="left">
+        <a href="/" class="link back" >
+          <i class="icon icon-back"></i>
+          <span class="ios-only">BACK</span>
+        </a>
+      </div>
+      <div class="title">簽收單列印</div>              
+    </div>
+  </div>        
+
+  <div class="page-content">
+    <div class="block">
+      <div class="row">
+        <button class="button col button-fill button-round signature">簽名</button>              
+        <button class="button col button-fill button-round connectPrint">連接印表機</button>
+        <button class="button col button-fill button-round startPrintBill" style="background-color:lightgray" disabled>開始印表</button>
+      </div>
+    </div>   
+    <p style="display: flex; justify-content: center;"> <img data-src="" width="220" height="60"  id="singnatureImg2" style="border: 1px solid blue;display:none"/></p>
+    <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+      <canvas id="printCanvas"  width="220" height="1200" style="border: 1px solid black;background-color:white"></canvas>  
+    </div>
+    <canvas id="myCanvas"  width="220" height="1200" style="border: 1px solid red;background-color:white;display:none">
+    </canvas>   
+            
+  </div>
+</div>

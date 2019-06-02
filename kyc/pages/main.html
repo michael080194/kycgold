@@ -1,0 +1,168 @@
+
+    <div class="page" data-name="main">
+      <div class="navbar">
+        <div class="navbar-inner sliding">
+          <div class="left">
+            <a href="/" class="link back">
+              <i class="icon icon-back"></i>
+              <span class="ios-only">登出</span>
+            </a>
+          </div>
+          <div class="title">主畫面</div>      
+        </div>
+      </div>          
+
+      <div class="toolbar tabbar-labels toolbar-bottom-md">
+        <div class="toolbar-inner">
+          <a href="#product" class="tab-link">
+            <i class="icon f7-icons ios-only">search</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">search_fill</i>
+            <i class="icon material-icons md-only">search</i>
+            <span class="tabbar-label">產品</span>
+          </a>
+          <a href="#barcode" class="tab-link">
+            <i class="icon f7-icons ios-only">barcode</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">barcode_fill</i>
+            <i class="icon f7-icons material-icons">barcode</i>
+            <span class="tabbar-label">掃條碼 </span>
+          </a>
+          <a href="#qrcode" class="tab-link">
+            <i class="icon f7-icons ios-only">qrcode</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">qrcode</i>
+            <i class="icon f7-icons material-icons">qrcode</i>
+            <span class="tabbar-label">QRCode</span>
+          </a>   
+          <a href="#blueTooth" class="tab-link" id="tab-bluetooth">
+            <i class="icon f7-icons ios-only">radio</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">radio</i>
+            <i class="icon f7-icons material-icons">radio</i>
+            <span class="tabbar-label">blueTooth</span>
+          </a>  
+          <a href="#paperang" class="tab-link  tab-link-active">
+            <i class="icon f7-icons ios-only">print</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">print</i>
+            <i class="icon f7-icons material-icons">print</i>
+            <span class="tabbar-label">PAPERANG</span>
+          </a>                      
+          <a href="#push" class="tab-link">
+            <i class="icon f7-icons ios-only">bolt_round</i>
+            <i class="icon f7-icons ios-only icon-ios-fill">bolt_round_fill</i>
+            <i class="icon f7-icons material-icons">bolt_round</i>
+            <span class="tabbar-label">firebase</span>
+          </a>                               
+        </div>
+      </div>
+
+      <div class="tabs">
+        <div id="product" class="page-content tab">
+          <div class="block">
+            <p><b>PRODUCT</b></p>
+            ...
+          </div>
+        </div>
+
+        <div id="barcode" class="page-content tab">
+          <div class="block">
+            <p><b>BARCODE</b></p>
+              <div>
+                <input type="text" class="barcode1" placeholder="barcode" value="4906938857135"/>
+              </div>
+              <!-- <a href="#"  id="scan" class="button button-fill">掃條碼</a> -->
+              <div class="row">
+                <button class="button col button-fill" id="scanBarcode">掃條碼</button>
+              </div>              
+          </div>
+        </div>
+
+        <div id="qrcode" class="page-content tab">
+          <div class="block">
+            <p><b>QRCODE</b></p>
+            ...
+          </div>
+        </div>
+
+        <div id="blueTooth" class="page-content tab">
+          <div class="block">
+            <p><b>blueTooth Test</b></p>
+            <div class="row">
+              <button class="button col button-fill" id="start-scan">Start Scan</button>
+            </div>
+            <div class="row">
+              <div id="devices"></div>
+            </div>    
+            <div class="row">
+                <div id="services"></div>
+            </div>    
+            <div class="row">
+                <div id="output"></div>
+            </div>                                    
+          </div>
+        </div>
+
+        <div id="paperang" class="page-content tab">
+          <div class="block">
+            <p><b>PAPERANG Test</b></p>
+            <div class="row">
+              <button class="button col button-fill" id="paperangRegister">Register</button>
+            </div>
+            <br>
+            <div class="row">
+              <button class="button col button-fill" id="paperangConnect">Connect</button>
+            </div>
+            <br>
+            <div class="row">
+              <button class="button col button-fill" id="paperangDisconnect">Disconnect</button>
+            </div>
+            <br>
+            <div class="row">
+              <button class="button col button-fill" id="checkOut">checkOut</button>
+            </div>
+            <br>                 
+            <div class="row">
+              <button class="button col button-fill" id="signature">Signature</button>
+            </div>
+            <br>            
+            <div class="row">
+              <button class="button col button-fill" id="paperangPrintImage">Print</button>
+            </div>  
+            <br>   
+            <div class="row">
+              <button class="button col button-fill" id="testPromise">測試promise</button>
+            </div>              
+            </br>
+            <canvas id="myCanvas1">
+            </canvas>    
+            <p> <img data-src="https://cdn.framework7.io/placeholder/nature-500x500-1.jpg" width="110" height="38" class="lazy lazy-fade-in demo-lazy" id="singnatureImg1"/>
+            </p>       
+            <p> <img data-src="" width="300" height="500" class="lazy lazy-fade-in demo-lazy" id="resultImg"/>
+            </p>                                        
+          </div>            
+        </div>
+
+        <div id="push" class="page-content tab">
+          <div class="block">
+            <p><b>Firebase</b></p>
+<!--               <a href="#"  id="push" class="button button-fill">推播訊息</a> <br> -->
+
+            <a href="#"  id="rooms" class="button button-fill">讀取rooms</a>    
+              <div class="data-table" id="table1" style="display: none;">
+                <table>
+                  <thead>
+                    <tr>
+                      <th class="label-cell">Rooms No</th>
+                      <th class="label-cell">温度</th>
+                      <th class="label-cell">溼度</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                </table>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+

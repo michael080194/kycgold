@@ -1,0 +1,37 @@
+<!-- 这个页面由于会通过Ajax加载，所以我们不需要实现完整的布局，只需添加.navbar和.page即可-->
+<!-- 顶部导航栏 -->
+<div class="navbar">
+  <div class="navbar-inner">
+    <div class="left">
+      <a href="#" class="back link">
+        <i class="icon icon-back"></i>
+        <span></span>
+       </a>
+    </div>
+    <div class="center sliding">{{title}}</div>
+    <div class="right">
+    </div>
+  </div>
+</div>
+<div class="pages">
+  <div data-page="list" class="page">
+    <div class="page-content">
+      <div class="list-block">
+        <ul>
+          <!-- 循环遍历新闻列表 -->
+          {{#each this.news}}
+            <li>
+              <a href="#" class="item-link item-content">
+                <div class="item-media"><i class="icon icon-f7"></i></div>
+                <div class="item-inner">
+                  <div class="item-title">{{this.title}}</div>
+                  <div class="item-after">{{this.date}}</div>
+                </div>
+              </a>
+            </li>
+          {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,55 @@
+
+	<div class="view view-sale"></div>
+    <div class="page" data-name="sale">
+      <div class="navbar">
+        <div class="navbar-inner sliding">
+          <div class="left">
+            <a href="/" class="link back">
+              <i class="icon icon-back"></i>
+              <span class="ios-only">登出</span>
+            </a>
+          </div>
+          <div class="title">銷貨清單</div>     
+          <div class="right">
+              <a href="/sale_head_edit/" class="link">新增銷貨單</a>
+          </div>                  
+        </div>
+      </div>          
+
+
+      <div id="sale" class="page-content">
+        <div class="list media-list chevron-center">
+          <ul>        
+            {{#each sales}}
+              <li class="swipeout  deleted-callback">
+                  <a href="#" class="item-link item-content" data-id={{id}}>
+                    <div class="item-inner">
+                      <div class="item-title-row">
+                        <div class="item-title">客戶：{{c_name}}</div>
+                        <div class="item-after"> <span class="badge">{{c_count}}</span></div>                      
+                      </div>
+                      <div class="item-subtitle">銷貨日期：{{datewk}}</div>
+                      <div class="item-subtitle">每日金價：{{c_price}}</div>    
+                      <div class="item-subtitle">重量合計：{{weight}}</div>  
+                      <div class="item-subtitle">金價合計：{{amount}}</div>
+                      <div class="item-subtitle">工資合計：{{c_wage}}</div>        
+                      <div class="item-subtitle">金額合計：{{c_total}}</div>                    
+                      <div class="item-subtitle">銷貨備註：{{c_remark}}</div>
+                      <div class="item-subtitle" >銷貨單號：{{id}}</div>                      
+                    </div>
+                  </a>
+                  <div class="swipeout-actions-left">
+                      <a href="#" class="changeHead color-green" data-id={{id}}>修改</a>                        
+                      <a href="#" data-confirm="確定刪除嗎?" class="swipeout-delete" >刪除</a>
+                  </div>                
+                </li>              
+            {{/each}}
+          </ul>
+        </div>           
+
+      </div>
+
+    </div>
+  </div>  
+
+

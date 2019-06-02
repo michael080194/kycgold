@@ -1,0 +1,5 @@
+01: 登入 --> index_gold.html (app.js)
+02: 銷貨清單(/sale/) --> sale.html (routes.js)
+03: 新增銷貨單(/sale_head_edit/) --> sale_head_edit.html (sale_head_edit.js)
+04: 銷貨明細(/sale_detail/) --> sale_detail.html (routes.js)
+04: 新增銷貨明細(/sale_detail_edit/) --> sale_detail_edit.html (sale_detail_edit.js)

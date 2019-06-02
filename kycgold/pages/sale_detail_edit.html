@@ -1,0 +1,127 @@
+
+    <div class="page" data-name="sale_detail_edit">
+     <div class="navbar">
+       <div class="navbar-inner sliding">
+         <div class="left">
+           <a href="/" class="link back" id="saleDetailEdit001">
+             <i class="icon icon-back"></i>
+             <span class="ios-only">BACK</span>
+           </a>
+         </div>
+         <div class="title">新增銷貨明細</div>   
+         <div class="right">
+            <a class="button fill-form-from-data"  id="sale_detail_edit_save" data-op={{op}} data-id={{id}}>儲存</a>
+        </div>                
+       </div>
+     </div>          
+
+     <div id="sale" class="page-content">
+      
+       <div class="block block-strong row">
+         <div class="col"><a class="button fill-form-from-data"  style="display:none" >不顯示</a></div>         
+         <div class="col"><a class="button convert-form-to-data" id="sale_detail_edit_sacn">掃條碼</a></div>
+         <div class="col"><a class="button fill-form-from-data"  style="display:none" >不顯示</a></div>
+       </div>            
+       <form class="list" id="my-form">                 
+         <input type="text" name="c_cost"   style="display: none;" value="{{c_cost}}">         
+         <input type="text" name="weight_1" style="display: none;" value="{{weight_1}}">
+         <input type="text" name="weight_2" style="display: none;" value="{{weight_2}}">
+         <input type="text" name="weight_3" style="display: none;" value="{{weight_3}}">
+         <input type="text" name="weight_4" style="display: none;" value="{{weight_4}}">
+         <ul>
+           <li>
+             <div class="item-content item-input">
+               <div class="item-inner">
+                 <div class="item-title item-label">產品編號</div>
+                 <div class="item-input-wrap">
+                   <input type="text" name="partno" readonly="readonly" value="{{partno}}">
+                 </div>
+               </div>
+             </div>
+           </li>
+           <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">品名</div>
+                  <div class="item-input-wrap">
+                    <input type="text" name="description" readonly="readonly" value="{{descrp}}">
+                  </div>
+                </div>
+              </div>
+            </li>           
+           <li>
+             <div class="item-content item-input">
+               <div class="item-inner">
+                 <div class="item-title item-label">重量</div>
+                 <div class="item-input-wrap">
+                   <input type="text" name="weight" readonly="readonly" value="{{weight}}">
+                 </div>
+               </div>
+             </div>
+           </li>
+           <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">金價</div>
+                  <div class="item-input-wrap">
+                    <input type="text" name="amount" value="{{amount}}">
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">工資</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="c_wage" value="{{c_wage}}">
+                    </div>
+                  </div>
+                </div>
+            </li>     
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">金額小計</div>
+                  <div class="item-input-wrap">
+                    <input type="text" name="c_amt" readonly="readonly" value="{{c_amt}}">
+                  </div>
+                </div>
+              </div>
+            </li>     
+            <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">銷貨數量</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="c_qty" value="{{c_qty}}">
+                    </div>
+                  </div>
+                </div>
+            </li>  
+            <li>
+              <div class="item-content item-input">
+                <div class="item-inner">
+                  <div class="item-title item-label">金額合計</div>
+                  <div class="item-input-wrap">
+                    <input type="text" name="c_total" readonly="readonly" value="{{c_total}}">
+                  </div>
+                </div>
+              </div>
+            </li>   
+            <li>
+                <div class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">備註</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="c_remark" value="{{c_remark}}">
+                    </div>
+                  </div>
+                </div>
+            </li>                                             
+         </ul>
+       </form>
+     </div>
+
+   </div>
+

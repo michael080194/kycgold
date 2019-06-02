@@ -1,0 +1,62 @@
+<div class="page" data-name="sale_head_edit">
+ <div class="navbar">
+   <div class="navbar-inner sliding">
+     <div class="left">
+       <a href="/" class="link back" id="sale_head_edit001">
+         <i class="icon icon-back"></i>
+         <span class="ios-only">Back</span>
+       </a>
+     </div>
+     <div class="title">新增銷貨單</div>
+     <div class="right">
+        <a class="button fill-form-from-data"  id="sale_head_edit_save"  data-op={{op}} data-id={{id}} >儲存</a>
+    </div>         
+   </div>
+ </div>
+ <div class="page-content">
+  <form class="list" id="demo-form"> 
+    <ul>
+      <li class="item-content item-input">
+        <div class="item-inner">
+          <div class="item-title item-label">客戶名稱</div>
+          <div class="item-input-wrap">
+            <input name="name" type="text"  value="{{c_name}}">
+            <span class="input-clear-button"></span>
+          </div>
+        </div>
+      </li>
+
+      <li class="item-content item-input">
+        <div class="item-inner">
+          <div class="item-title item-label">銷貨日期</div>
+          <div class="item-input-wrap">
+              <input type="text" readonly="readonly" id="date1"  value="{{datewk}}"/>
+              <span class="input-clear-button"></span>
+          </div>
+        </div>
+      </li>
+      <li class="item-content item-input">
+       <div class="item-inner">
+         <div class="item-title item-label">每日金價</div>
+         <div class="item-input-wrap">
+           <input name="c_price" type="text"  value="{{c_price}}">
+           <span class="input-clear-button"></span>
+         </div>
+       </div>
+     </li>
+
+     <li class="item-content item-input">
+        <!-- <div class="item-media">... icon/image here ...</div> -->
+        <div class="item-inner">
+          <div class="item-title item-floating-label">銷貨備註</div>
+          <div class="item-input-wrap">
+            <input type="text" name="c_remark"  value="{{c_remark}}">
+            <span class="input-clear-button"></span>
+          </div>
+        </div>
+      </li>    
+
+    </ul>
+  </form>
+</div>
+</div>

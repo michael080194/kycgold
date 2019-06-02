@@ -1,0 +1,62 @@
+
+    <div class="page" data-name="sale_detail">
+     <div class="navbar">
+       <div class="navbar-inner sliding">
+         <div class="left">
+           <a href="/" class="link back" id="saleDetail001">
+             <i class="icon icon-back"></i>
+             <span class="ios-only">BACK</span>
+           </a>
+         </div>
+         <div class="title">銷貨明細</div>    
+        <div class="right">
+            <a href="/sale_detail_edit/" class="link">新增明細</a>
+        </div>           
+       </div>
+     </div>     
+
+     <div class="toolbar tabbar-labels toolbar-bottom-md">
+      <div class="toolbar-inner">
+          <a href="/sale_detail_bill/" class="tab-link">
+              <i class="icon f7-icons ios-only">document_text</i>
+              <i class="icon f7-icons ios-only icon-ios-fill">document_text_fill</i>
+              <i class="icon material-icons md-only">document_text</i>
+              <span class="tabbar-label">結帳</span>
+          </a>
+      </div>
+    </div>
+
+     <div id="sale_detail" class="page-content">
+        <div> 客戶名稱:</div>        
+        <div class="list media-list chevron-center">
+          <ul>
+          {{#each sales}}             
+            <li  class="swipeout deleted-callback">
+              <a href="#" class="item-link item-content" data-id={{id}}>
+                <div class="item-inner">
+                  <div class="item-title-row">
+                    <div class="item-title">產品編號：{{partno}}</div>         
+                  </div>
+                  <div class="item-subtitle">品名：{{description}}</div>
+                  <div class="item-subtitle">重量：{{weight}}</div>   
+                  <div class="item-subtitle">金價：{{amount}}</div>   
+                  <div class="item-subtitle">工資：{{c_wage}}</div>
+                  <div class="item-subtitle">小計：{{c_amt}}</div>                           
+                  <div class="item-subtitle">數量：{{c_qty}}</div>        
+                  <div class="item-subtitle">合計：{{c_total}}</div>                                   
+                  <div class="item-subtitle">備註：{{c_remark}}</div>
+                  <div class="item-subtitle">銷貨序號：{{id}}</div>                       
+                </div>
+              </a>
+              <div class="swipeout-actions-left">
+                <a href="#" class="changeDetail color-green" data-id={{id}}>修改</a>                 
+                <a href="#" data-confirm="確定刪除嗎?" class="swipeout-delete" >刪除</a>
+              </div>               
+            </li>
+            {{/each}}
+          </ul>
+        </div>
+     </div>
+
+   </div>
+
